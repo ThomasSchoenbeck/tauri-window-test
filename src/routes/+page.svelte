@@ -31,13 +31,34 @@
 
 <!-- <div class="wrapper"> -->
 <div data-tauri-drag-region class="titlebar">
-  <div class="titlebar-button" id="titlebar-minimize" onclick={appWindow.minimize} onkeyup={appWindow.minimize} role="button" tabindex="0">
+  <div
+    class="titlebar-button"
+    id="titlebar-minimize"
+    onclick={appWindow.minimize}
+    onkeyup={appWindow.minimize}
+    role="button"
+    tabindex="0"
+  >
     <img src="https://api.iconify.design/mdi:window-minimize.svg" alt="minimize" />
   </div>
-  <div class="titlebar-button" id="titlebar-maximize" onclick={appWindow.maximize} role="button" tabindex="0" onkeyup={appWindow.maximize}>
+  <div
+    class="titlebar-button"
+    id="titlebar-maximize"
+    onclick={appWindow.maximize}
+    role="button"
+    tabindex="0"
+    onkeyup={appWindow.maximize}
+  >
     <img src="https://api.iconify.design/mdi:window-maximize.svg" alt="maximize" />
   </div>
-  <div class="titlebar-button" id="titlebar-close" role="button" tabindex="0" onclick={() => closeWindow()} onkeyup={() => closeWindow()}>
+  <div
+    class="titlebar-button"
+    id="titlebar-close"
+    role="button"
+    tabindex="0"
+    onclick={() => closeWindow()}
+    onkeyup={() => closeWindow()}
+  >
     <img src="https://api.iconify.design/mdi:close.svg" alt="close" />
   </div>
 </div>
@@ -181,7 +202,7 @@
   @media (prefers-color-scheme: dark) {
     :root {
       color: #f6f6f6;
-      background-color: #2f2f2f;
+      /* background-color: #2f2f2f; */
     }
 
     a:hover {
